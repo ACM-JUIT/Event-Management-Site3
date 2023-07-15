@@ -1,0 +1,111 @@
+<!DOCTYPE html>  
+<html>
+    <head>
+        <link rel="stylesheet" href="Adding style.css">
+        <title>
+            Add Event
+        </title>
+    </head>
+    <body>
+        <header id="main-header">
+            <img src="EM.png" width="75" height="50">
+        </header>
+
+        <div class="heading">
+        <h1>ADD A NEW EVENT</h1>
+           
+            <form action="process.PHP">
+                    <h2>Event Information:</h2>
+                    
+                <div class="container">
+                    <label for="event title">Event Title</label>
+                    <input type="text" name="eventTite" placeholder="Enter the title for event">
+               <br>
+                
+                        <label for="eventDate">Event Date</label>
+                        <input type="date" name="Event Date">
+                    
+                    <br>
+                    
+                        <label for="startTime">Start Time</label>
+                        <input type="time" name="Start Time">
+                    
+                    <br>
+                    
+                        <label for="endTime">End Time</label>
+                        <input type="time" name="End Time">
+                    
+                    <br>
+                    
+                        <label for="Event Location">Event location</label>
+                        <input type="text"  name="Event location" placeholder="Enter the event location">
+                    
+                    <br>
+                    
+                        <label for="eventCategory">Event Category</label>
+                        <select name="Event Categories" id="eventCategory">
+                            <option value="Graduation ceremonies">Graduation ceremonies</option>
+                            <option value="Conference">Conference</option>
+                            <option value="Art exhibition">Art exhibition</option>
+                            <option value="Workshop">Workshop</option>
+                            <option value="Music concert">Music concert</option>
+                            <option value="Theater performance">Theater performance</option>
+                            <option value="Seminar">Seminar</option>
+                            <option value="Educational conference">Educational conference</option>
+                            <option value="Awareness campaign">Awareness campaign</option>
+                            <option value="Hackathon">Hackathon</option>
+                            <option value="Film festival">Film festival</option>
+                            <option value="Literary event">Literary event</option>
+                            <option value="Dance performance">Dance performance</option>
+                            <option value="Workshops">Workshops</option>
+                            <option value="Tech summit">Tech summit</option>
+                     </select>
+                    
+                    <br>
+                    
+                        <label for="Event Description">Event Description</label>
+                        <textarea type="message" name="Event Description" id="" cols="3" rows="1"></textarea>
+                    
+                
+                <hr>
+                
+<h2>Contact Information:</h2>
+<label for="name">Contact name</label>
+<input type="text" name="Contact Name" placeholder="Enter your name">
+<br>
+<label for="email">Contact Email</label>
+<input type="email" name="Contact email" placeholder="enter your email">
+<br>
+<label for="number">Contact number</label>
+<input type="text" name="Contact number" placeholder="Enter your phone number">
+
+<hr>
+
+    <h2>Additional Details:</h2>
+    <label for="Regesteration">Regesteration</label>
+    <input type="checkbox" name="Regesteration Required" id="Regesteration">
+    <br>
+    <label for="Attendees">Attendees</label>
+    <input type="number" name="Maximum attendees">
+    <br>
+    <label for="Price">Price</label>
+    <input type="number" name="Ticket price">
+    <br>
+
+<hr>
+<br>
+<p>Please fill out the form with the appropriate information for your event. Once you submit the form, the event will be added to the website.</p>
+<button class="submit">Submit</button>
+
+            </form>
+        </div>
+        <br>
+        <hr>
+         <u>Edit Event</u>
+            <br>
+        </div>
+        <div class="footer">
+            <p><hr>Copright &copy; 2023 , Eventlance Sparks</p>
+        </div>
+    </body>
+</html>
