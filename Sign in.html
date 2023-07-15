@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Login and Sign Up Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #020503;
+            margin: 0;
+            padding: 0;
+        }
+
+        #main-header{
+    background-color: white;
+    color: red;
+    display: inline-block;
+    margin-bottom: 0px;
+    width: 100%;
+}
+        
+        .container {
+            max-width: 400px;
+            margin: 100px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        .container h2 {
+            text-align: center;
+        }
+        
+        .container input[type="text"],
+        .container input[type="password"] {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            box-sizing: border-box;
+        }
+        
+        .container button {
+            width: 100%;
+            background-color: #020503;
+            color: #fff;
+            padding: 12px;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+        
+        .container button:hover {
+            background-color: #45a049;
+        }
+        
+        .container .switch {
+            text-align: center;
+            margin-top: 20px;
+        }
+        
+        .container .switch a {
+            color: #777;
+            text-decoration: none;
+        }
+
+        .footer{
+            color: black;
+            background-color: white;
+            margin-bottom: 0%;
+            text-align: right;
+            height: 40px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <header id="main-header">
+        <img src="EM.png" width="75" height="50">
+    </header>
+    <div class="container">
+        <h2>Login</h2>
+        <form id="login-form">
+            <input type="text" placeholder="Username" required>
+            <input type="password" placeholder="Password" required>
+            <button type="submit">Login</button>
+        </form>
+        <div class="switch">
+            <a href="#" onclick="showSignup()">Create an account</a>
+        </div>
+    </div>
+
+    <div class="container" style="display: none;" id="signup-container">
+        <h2>Sign Up</h2>
+        <form id="signup-form">
+            <input type="text" placeholder="Username" required>
+            <input type="password" placeholder="Password" required>
+            <button type="submit">Sign Up</button>
+        </form>
+        <div class="switch">
+            <a href="#" onclick="showLogin()">Already have an account? Login</a>
+        </div>
+    </div>
+
+    <script>
+        function showSignup() {
+            document.getElementById("login-form").style.display = "none";
+            document.getElementById("signup-container").style.display = "block";
+        }
+
+        function showLogin() {
+            document.getElementById("signup-container").style.display = "none";
+            document.getElementById("login-form").style.display = "block";
+        }
+    </script>
+
+<div class="footer">
+    <p><hr>Copright &copy; 2023 , Eventlance Sparks</p>
+</div>
+
+</body>
+
+</html>
