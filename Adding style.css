@@ -1,48 +1,117 @@
-body{
-    background-color:black;
-    font: 1em sans-serif;
+body, h1, h2, p, form, input, textarea {
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    background-image: url(h.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
     color: white;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 16px;
-    line-height: 1.6em;
-   margin: 0%;
-
-}
-
-
-#main-header{
+    line-height: 1.6;
+  }
+  
+  #main-header {
     background-color: white;
-    color: red;
-    display: inline-block;
-    margin-bottom: 0px;
-    width: 100%;
-}
-
-.heading{
-        margin-left: 20px;
-        line-height: 50px;
-}
-
-.heading h1{
-    color:white;
-    font-size: 30px;
+    padding: 10px;
+    padding-left: 0%;
+  }
+  
+  #main-header img {
+    height: 70px;
+    display: block;
+    margin: 0;
+  }
+  
+  .heading {
     text-align: center;
-    font-family: cursive;
-}
-
-.heading h2{
+    margin-top: 30px;
+  }
+  
+  .heading h1 {
+    font-size: 30px;
+    margin-bottom: 10px;
+  }
+  
+  .container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .container h2 {
+    color: white;
     font-size: 20px;
-}
-
-.heading label{
-    font-size: 15px;
-    padding-left: 60px;
-}
-
-.footer{
+    margin-bottom: 10px;
+  }
+  
+  .container label {
+    display: block;
+    color: white;
+    margin-bottom: 5px;
+  }
+  
+  .container input[type="text"],
+  .container input[type="date"],
+  .container input[type="time"],
+  .container input[type="email"],
+  .container input[type="number"],
+  .container textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #444;
+    border: none;
+    color: white;
+    border-radius: 3px;
+  }
+  
+  .container textarea {
+    resize: vertical;
+  }
+  
+  .container select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #444;
+    border: none;
+    color: white;
+    border-radius: 3px;
+  }
+  
+  .container textarea,
+  .container select {
+    color: white;
+  }
+  
+  .container .submit {
+    background-color: #ff5733;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .container .submit:hover {
+    background-color: #ff3300;
+  }
+  
+  .footer {
     color: black;
     background-color: white;
-    margin-bottom: 0%;
     text-align: right;
-    height: 40px;
-}
+    padding: 10px;
+  }
+  
+  .footer p {
+    margin: 0;
+  }
+  
